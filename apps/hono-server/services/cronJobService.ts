@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/extension.js";
+import { Prisma } from "@workspace/db";
 import cron, { ScheduledTask } from "node-cron";
 import {
   execute,
@@ -7,7 +7,7 @@ import {
 } from "../utils/utils.js";
 import { sendServiceFailMail } from "./mailService.js";
 
-const prisma = new PrismaClient();
+const prisma = Prisma;
 
 export const MAX_RETRIES = 3;
 export const RETRY_DELAY_MS = 5000;

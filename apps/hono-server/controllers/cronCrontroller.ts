@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/extension.js";  
+import { Prisma } from "@workspace/db";  
 import { Context } from "hono";
 import cron from "node-cron";
 import {
@@ -19,7 +19,7 @@ import {
   CronJobUpdateSchema,
 } from "../validator/cron.validator.js";
 
-const prisma = new PrismaClient();
+const prisma = Prisma;
 
 export const createCronjob = async (c: Context) => {
   try {
