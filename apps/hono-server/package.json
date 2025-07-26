@@ -1,0 +1,21 @@
+{
+  "name": "express-server",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "@workspace/db": "workspace:*",
+    "axios": "^1.11.0",
+    "cron-parser": "^5.3.0",
+    "hono": "^4.8.9",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
+    "vercel": "^32.7.2"
+  }
+}
