@@ -1,4 +1,4 @@
-import { PrismaClient } from "@workspace/db";
+import { PrismaClient } from "@prisma/client/extension.js";
 import cron, { ScheduledTask } from "node-cron";
 import {
   execute,
