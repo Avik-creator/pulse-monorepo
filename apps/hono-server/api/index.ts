@@ -3,7 +3,7 @@ import { handle } from 'hono/vercel'
 import cronRoute  from '../routes/cronRoute.js'
 import { loadCronJobs } from '../services/cronJobService.js' 
 export const config = {
-  runtime: 'edge'
+  runtime: 'nodejs'
 }
 
 const app = new Hono().basePath('/api')

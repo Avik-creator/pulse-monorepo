@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/index.ts": {
-      "runtime": "vercel/@node20.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
