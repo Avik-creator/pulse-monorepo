@@ -3,6 +3,9 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
+    "paths": {
+      "@prisma/client": ["./node_modules/@prisma/client"]
+    },
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true
