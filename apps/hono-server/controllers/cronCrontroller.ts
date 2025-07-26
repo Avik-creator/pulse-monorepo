@@ -1,4 +1,4 @@
-import { PrismaClient } from "@workspace/db"  
+import { PrismaClient } from "@prisma/client/extension.js";  
 import { Context } from "hono";
 import cron from "node-cron";
 import {

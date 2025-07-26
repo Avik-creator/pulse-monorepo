@@ -1,21 +1,13 @@
 {
-  "extends": "@workspace/typescript-config/base.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "paths": {
-      "@prisma/client": ["./node_modules/@prisma/client"]
-    },
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": "."
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "dist",
-    "node_modules",
-    "prisma/migrations"
-  ]
+  "include": ["src", "prisma"]
 }
