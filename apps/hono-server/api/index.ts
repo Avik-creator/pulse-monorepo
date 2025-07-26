@@ -15,6 +15,6 @@ app.get('/', (c) => {
   return c.json({ message: 'Hello Hono!' })
 })
 
-app.route("/api/v1/cronJob", cronRoute)
+app.route("/v1/cronJob", cronRoute)
 
 export default handle(app)
